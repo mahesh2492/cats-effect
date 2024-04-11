@@ -1,7 +1,7 @@
 package part2effects
 
 import cats.effect.{IO, IOApp}
-import tils.DebugWrapper
+import utils.DebugWrapper
 
 object IOParallelism extends IOApp.Simple {
 

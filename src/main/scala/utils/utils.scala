@@ -1,6 +1,6 @@
 import cats.effect.IO
 
-package object tils {
+package object utils {
   implicit class DebugWrapper[A](io: IO[A]) {
     def myDebug: IO[A] = for {
       a <- io
