@@ -10,7 +10,7 @@ object Refs extends IOApp.Simple {
 
   //ref = purely functional atomic structure
   val atomicMol: IO[Ref[IO, Int]] = Ref[IO].of(42)
-  val atomicMol_v2: IO[Ref[IO, Int]] = IO.ref(42)
+  val atomicMo_v2: IO[Ref[IO, Int]] = IO.ref(42)
 
   val increasedMol = atomicMol.flatMap { ref =>
     ref.set(43) //thread safe
